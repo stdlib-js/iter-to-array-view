@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterator2arrayview
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Fill an array-like object view with values returned from an iterator.
 
@@ -237,9 +237,9 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/array/to-view-iterator`][@stdlib/array/to-view-iterator]: create an iterator from an array-like object view.
--   [`@stdlib/iter/to-array-view-right`][@stdlib/iter/to-array-view-right]: fill an array-like object view from right to left with values returned from an iterator.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/array/to-view-iterator`][@stdlib/array/to-view-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view.</span>
+-   <span class="package-name">[`@stdlib/iter/to-array-view-right`][@stdlib/iter/to-array-view-right]</span><span class="delimiter">: </span><span class="description">fill an array-like object view from right to left with values returned from an iterator.</span>
 
 </section>
 
@@ -290,8 +290,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-to-array-view/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-to-array-view?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-to-array-view.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-to-array-view/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
