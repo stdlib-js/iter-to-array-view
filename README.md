@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterator2arrayview;
+})();
 })();
 </script>
 ```
@@ -222,6 +224,7 @@ var count = ctx.count;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function scale( v, i ) {
     return v * (i+1);
@@ -238,6 +241,7 @@ for ( i = 0; i < arr.length; i++ ) {
     console.log( arr[ i ] );
 }
 
+})();
 })();
 </script>
 </body>
@@ -341,15 +345,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/iter-to-array-view/main/LICENSE
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator/tree/umd
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator/tree/umd/tree/umd
 
-[@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array-to-view-iterator/tree/umd
+[@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array-to-view-iterator/tree/umd/tree/umd
 
-[@stdlib/iter/to-array-view-right]: https://github.com/stdlib-js/iter-to-array-view-right/tree/umd
+[@stdlib/iter/to-array-view-right]: https://github.com/stdlib-js/iter-to-array-view-right/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
