@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/to-array-view"
-click B href "https://github.com/stdlib-js/iter-to-array-view/tree/main"
-click C href "https://github.com/stdlib-js/iter-to-array-view/tree/production"
-click D href "https://github.com/stdlib-js/iter-to-array-view/tree/esm"
-click E href "https://github.com/stdlib-js/iter-to-array-view/tree/deno"
-click F href "https://github.com/stdlib-js/iter-to-array-view/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/to-array-view"
+%% click B href "https://github.com/stdlib-js/iter-to-array-view/tree/main"
+%% click C href "https://github.com/stdlib-js/iter-to-array-view/tree/production"
+%% click D href "https://github.com/stdlib-js/iter-to-array-view/tree/esm"
+%% click E href "https://github.com/stdlib-js/iter-to-array-view/tree/deno"
+%% click F href "https://github.com/stdlib-js/iter-to-array-view/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/iter/to-array-view
