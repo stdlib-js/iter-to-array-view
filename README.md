@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-to-array-view
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterator2arrayview = require( '@stdlib/iter-to-array-view' );
+import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@esm/index.mjs';
 ```
 
 #### iterator2arrayview( iterator, dest\[, begin\[, end]]\[, mapFcn\[, thisArg]] )
@@ -76,8 +60,8 @@ var iterator2arrayview = require( '@stdlib/iter-to-array-view' );
 Fills an array-like `object` view with values returned from an `iterator`.
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var iter = array2iterator( [ 1, 2, 3, 4 ] );
 
@@ -88,8 +72,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 10 ) );
 By default, the function begins filling from the first element of a provided array-like `object`. To specify an alternative starting index, provide a `begin` argument (zero-based and inclusive).
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var iter = array2iterator( [ 1, 2, 3, 4 ] );
 
@@ -100,8 +84,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 10 ), 3 );
 If `begin` is less than `0`, the starting index is resolved relative to the last element of the provided array-like `object`. For example, the following achieves the same behavior as the previous example
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var iter = array2iterator( [ 1, 2, 3, 4 ] );
 
@@ -112,8 +96,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 10 ), -7 );
 By default, the function assumes that a view extends through the last element of a provided array-like `object`. To specify an alternative last view element, provide an `end` argument (zero-based and non-inclusive).
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var iter = array2iterator( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] );
 
@@ -124,8 +108,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 10 ), 0, 4 );
 If `end` is less than `0`, the last view element is resolved relative to the last element of the provided array-like `object`. For example, the following achieves the same behavior as the previous example
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var iter = array2iterator( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] );
 
@@ -136,8 +120,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 10 ), 0, -6 );
 To invoke a function for each iterated value, provide a callback function.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 function fcn( v ) {
     return v * 10.0;
@@ -156,8 +140,8 @@ The invoked function is provided three arguments:
 -   **n**: iteration count (zero-based).
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 function fcn( v, i ) {
     return v * (i+1);
@@ -172,8 +156,8 @@ var arr = iterator2arrayview( iter, new Uint8Array( 4 ), fcn );
 To set the callback function execution context, provide a `thisArg`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
 
 function fcn( v ) {
     this.count += 1;
@@ -216,10 +200,15 @@ var count = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
-var iterator2arrayview = require( '@stdlib/iter-to-array-view' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
+import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@esm/index.mjs';
 
 function scale( v, i ) {
     return v * (i+1);
@@ -235,6 +224,10 @@ var i;
 for ( i = 0; i < arr.length; i++ ) {
     console.log( arr[ i ] );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -274,7 +267,7 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -334,15 +327,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/iter-to-array-view/main/LICENSE
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/esm
 
 <!-- <related-links> -->
 
-[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator/tree/esm
 
-[@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array-to-view-iterator
+[@stdlib/array/to-view-iterator]: https://github.com/stdlib-js/array-to-view-iterator/tree/esm
 
-[@stdlib/iter/to-array-view-right]: https://github.com/stdlib-js/iter-to-array-view-right
+[@stdlib/iter/to-array-view-right]: https://github.com/stdlib-js/iter-to-array-view-right/tree/esm
 
 <!-- </related-links> -->
 
