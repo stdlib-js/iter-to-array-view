@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@deno/mod.js';
+import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@v0.2.3-deno/mod.js';
 ```
 
 #### iterator2arrayview( iterator, dest\[, begin\[, end]]\[, mapFcn\[, thisArg]] )
@@ -203,7 +203,7 @@ var count = ctx.count;
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@deno/mod.js';
+import iterator2arrayview from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-to-array-view@v0.2.3-deno/mod.js';
 
 function scale( v, i ) {
     return v * (i+1);
